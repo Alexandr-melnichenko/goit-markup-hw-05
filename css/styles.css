@@ -494,5 +494,41 @@ fill: #f4f4fd;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.second-column {
+  margin-right: 80px;
+}
+
+.input-email {
+  padding: 8px 16px;
+  min-width: 264px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-right: 24px;
+  background-color: inherit;
+  color: #fff;
+}
+
+/*.placeholder-email {
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+color: #fff;
+}*/
+
+input[placeholder="E-mail"] {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.footer-input::placeholder {
+  color: #FFFFFF;
+}
 
 /*----------------------------*/
