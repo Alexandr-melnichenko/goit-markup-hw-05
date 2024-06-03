@@ -527,7 +527,7 @@ input[placeholder="E-mail"] {
   color: #fff;
 }
 
-.footer-input::placeholder {
+.email::placeholder {
   color: #FFFFFF;
 }
 
