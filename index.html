@@ -486,5 +486,37 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="form-close">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="modal-form-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form" name="modal-form" autocomplete="off" novalidate>
+         
+          <label for="name" class="label-form-modal">Name</label>
+          <input class="input-modal" type="text" name="name" id="name">
+        
+        
+          <label for="phone" class="label-form-modal">Phone</label>
+          <input class="input-modal" type="text" name="phone" id="phone">
+        
+          <label for="email" class="label-form-modal">E-mail</label>
+          <input class="input-modal" type="text" name="email" id="email">
+         
+          <label for="email" class="label-form-modal">Comment</label>
+          <textarea class="texarea-coments" name="comment" id="comment" placeholder="Text input"></textarea>
+          
+          <div class="check-modal-row">
+          <input class="checkbox-modal" type="checkbox" id="checkbox-modal"></input>
+          <label for="checkbox-modal" class="label-form-check">I accept the terms and conditions of the <a class="policy" href="">Privacy Policy</a></label>
+        </div>
+
+          <button type="button" class="btn-modal">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
