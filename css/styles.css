@@ -531,4 +531,36 @@ input[placeholder="E-mail"] {
   color: #FFFFFF;
 }
 
+.input-email::placeholder {
+  color: #fff;
+}
+
+.footer-button {
+  padding: 8px 24px;
+  background-color: #4D5AE5;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+}
+
+.btn-text {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+margin: 0;
+margin-right: 16px;
+}
+
+.third-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-form {
+  display: flex;
+}
 /*----------------------------*/
