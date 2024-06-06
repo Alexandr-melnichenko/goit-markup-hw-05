@@ -486,6 +486,7 @@
         </div>
       </div>
     </footer>
+    <!--------------------Modal Form---------------->
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="form-close">
@@ -497,16 +498,30 @@
         <form class="modal-form" name="modal-form" autocomplete="off" novalidate>
          
           <label for="name" class="label-form-modal">Name</label>
+          <div class="modal-field-wrap">
           <input class="input-modal" type="text" name="name" id="name">
-        
+          <svg class="modal-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </div>
         
           <label for="phone" class="label-form-modal">Phone</label>
-          <input class="input-modal" type="text" name="phone" id="phone">
-        
+          <div class="modal-field-wrap">
+          <input class="input-modal" type="tel" name="phone" id="phone">
+          <svg class="modal-icon" width="13" height="13">
+            <use href="./images/icons.svg#icon-telephone"></use>
+          </svg>
+        </div>
+
           <label for="email" class="label-form-modal">E-mail</label>
-          <input class="input-modal" type="text" name="email" id="email">
-         
-          <label for="email" class="label-form-modal">Comment</label>
+          <div class="modal-field-wrap">
+          <input class="input-modal" type="email" name="email" id="email">
+          <svg class="modal-icon" width="15" height="12">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </div>
+
+          <label for="comment" class="label-form-modal">Comment</label>
           <textarea class="texarea-coments" name="comment" id="comment" placeholder="Text input"></textarea>
           
           <div class="check-modal-row">

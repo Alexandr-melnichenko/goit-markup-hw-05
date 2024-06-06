@@ -578,6 +578,15 @@ margin-right: 16px;
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -591,7 +600,7 @@ margin-right: 16px;
   transform: translate(-50%, -50%) scale(1);
   display: flex;
   flex-direction: column;
-padding: 72px 24px;
+padding: 72px 24px 24px;
 
 }
 
@@ -609,6 +618,11 @@ background-color: #E7E9FC;
 border: 1px solid rgba(0, 0, 0, 0.1);
 padding: 0;
 margin-bottom: 24px;
+}
+
+.form-close:hover {
+  background-color: #404BBF;
+  fill: #fff
 }
 
 .modal-form {
@@ -641,11 +655,21 @@ margin-bottom: 16px;
 }
 
 .input-modal {
-  margin-bottom: 8px;
   min-height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 100%;
+  padding-left: 38px;
+}
+
+.modal-form input:active +svg, 
+.modal-form input:focus +svg  {
+  fill: #4D5AE5;
+}
+
+.modal-form textarea:active,
+.modal-form textarea:focus {
+  fill: #4D5AE5;
 }
 
 .texarea-coments {
@@ -655,6 +679,7 @@ margin-bottom: 16px;
   resize: none;
   height: 120px;
   margin-bottom: 16px;
+  padding: 8px 16px;
 }
 
 .check-modal-row {
@@ -666,7 +691,15 @@ margin-bottom: 16px;
 }
 
 .checkbox-modal {
+width: 16px;
+height: 16px;
+border-radius: 2px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+}
 
+.checkbox-modal:active {
+  background-color: #404BBF;
+  fill: #F4F4FD;
 }
 
 .label-form-check {
@@ -697,7 +730,32 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
 margin: 0 auto;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
+.btn-modal:hover {
+  background-color: #404BBF;
+}
+
+.texarea-coments::placeholder {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-field-wrap {
+position: relative;
+width: 100%;
+margin-bottom: 8px;
+}
+
+.modal-icon {
+position: absolute;
+left: 16px;
+top: 50%;
+transform: translateY(-50%);
+}
 
 /*---------------------------*/
