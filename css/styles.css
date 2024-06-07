@@ -25,6 +25,20 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*-------------header------------*/
 .logo {
   font-family: "Raleway", sans-serif;
@@ -206,9 +220,6 @@ margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.company-title {
 }
 
 .company-sub-title {
@@ -498,10 +509,6 @@ fill: #f4f4fd;
   margin-right: 80px;
 }
 
-.label-footer-form {
-
-}
-
 .input-email {
   padding-left: 16px;
   min-width: 264px;
@@ -701,21 +708,24 @@ margin-bottom: 16px;
 }
 
 .input-modal {
-  min-height: 40px;
+  height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 100%;
   padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-form input:active +svg, 
 .modal-form input:focus +svg  {
   fill: #4D5AE5;
+  border-color: #4D5AE5;
 }
 
 .modal-form textarea:active,
 .modal-form textarea:focus {
-  fill: #4D5AE5;
+  border-color: #4D5AE5;
 }
 
 .texarea-coments {
@@ -724,8 +734,21 @@ margin-bottom: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   resize: none;
   height: 120px;
-  margin-bottom: 16px;
   padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em; 
+  color: rgba(46, 47, 66, 0.4); 
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.modal-textarea-wrap {
+  margin-bottom: 16px;
+  width: 100%;
 }
 
 .check-modal-row {
@@ -748,6 +771,8 @@ border: 1px solid rgba(46, 47, 66, 0.4);
   fill: #F4F4FD;
 }
 
+.visually-hidden
+
 .label-form-check {
 font-weight: 400;
 font-size: 12px;
@@ -764,7 +789,7 @@ width: 100%;
 
 .btn-modal {
   display: block;
-  width: 169px;
+ min-width: 169px;
   height: 56px;
   background-color: #4D5AE5;
   border-radius: 4px;
@@ -776,7 +801,8 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
 margin: 0 auto;
-
+cursor: pointer;
+background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-modal:hover {
@@ -801,6 +827,29 @@ position: absolute;
 left: 16px;
 top: 50%;
 transform: translateY(-50%);
+}
+
+.checkbox-true {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4); 
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+
+
+}
+
+.checkbox-modal:checked .checkbox-true {
+  background-color: #404bbf;
+  border: none;
+  fill: #F4F4FD;
+
 }
 
 /*---------------------------*/
